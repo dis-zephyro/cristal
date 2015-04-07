@@ -1,3 +1,5 @@
+@import url(../fonts/AnastasiaScript/AnastasiaScript.css);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic);
 /* Base styles
    ========================= */
 * {
@@ -10,11 +12,11 @@ button,
 input,
 select,
 textarea {
-  color: #222;
+  color: #000;
 }
 html {
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: 13px;
+  line-height: 1.38;
 }
 hr {
   display: block;
@@ -29,16 +31,6 @@ hr {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-}
-.header .header-logo {
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-.header .header-contact {
-  top: 0;
-  right: 0;
-  position: absolute;
 }
 /* Typography
    ========================= */

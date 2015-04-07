@@ -1,0 +1,13 @@
+@media (min-width: 1170px) {
+  .block01 {
+    height: 767px;
+    padding-top: 60px;
+    background: url("../img/b01_bd.jpg") top center no-repeat;
+  }
+  .block01 .logo {
+    float: left;
+    width: 205px;
+    height: 41px;
+    background: url("../img/logo.png") 0 0 no-repeat;
+  }
+}
