@@ -176,6 +176,7 @@ hr {
   height: 100%;
   z-index: 100;
   padding: 5px;
+  background: #000;
   cursor: pointer;
   position: absolute;
   color: #cca56a;
@@ -735,7 +736,7 @@ hr {
   border-color: #000;
 }
 .slick-dots {
-  bottom: 15px;
+  bottom: 0px;
   left: 60px;
   width: 180px;
   height: 20px;
