@@ -1,83 +1,52 @@
 @media (min-width: 1170px) {
+  .container {
+    width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .block01 {
-    color: #fff;
     height: 767px;
     padding-top: 68px;
-    background: url("../img/b01_bd.jpg") top center no-repeat;
-  }
-  .block01 .logo {
-    float: left;
-    width: 205px;
-    height: 41px;
-    background: url("../img/logo.png") 0 0 no-repeat;
   }
   .block01 .tel {
-    width: 220px;
-    font-size: 25px;
-    font-weight: 600;
     margin-right: 35px;
   }
   .block01 h1 {
-    font-size: 50px;
-    line-height: 55px;
     margin-top: 200px;
-    margin-bottom: 7px;
-  }
-  .block01 h2 {
-    font-size: 15px;
-    margin-bottom: 40px;
-    text-transform: uppercase;
   }
   .block01 .line {
     width: 204px;
-    height: 16px;
-    margin: 0 auto 20px auto;
-    background: url("../img/b1_divider.png") 0 0 no-repeat;
   }
   .block02 {
     padding: 85px 0 75px 0;
-    border-bottom: 1px solid #dcdcdc;
   }
   .block02 ul {
     margin: 0 85px;
   }
   .block02 ul li {
-    float: left;
+    padding: 0;
     width: 170px;
     margin: 0 15px;
   }
-  .block02 ul li .item-image {
-    width: 70px;
-    margin: 0 auto 22px auto;
-  }
-  .block02 ul li .item-text {
-    font-size: 13px;
-    text-align: center;
+  .block02 ul li.item04 {
+    margin-left: 0;
   }
   .block03 {
     padding: 48px 0;
-    border-bottom: 1px solid #dcdcdc;
   }
   .block03 .slider {
     width: 1030px;
   }
   .block03 .slider .slide-text {
-    float: left;
     width: 430px;
     height: 340px;
     padding-top: 45px;
-  }
-  .block03 .slider .slide-text .slide-name {
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 7px;
   }
   .block03 .slider .slide-text .slide-title {
     font-size: 25px;
     line-height: 30px;
   }
   .block03 .slider .slide-image {
-    float: right;
     width: 470px;
     height: 340px;
     margin-right: 30px;
@@ -87,7 +56,6 @@
   }
   .block04 h2 {
     font-size: 25px;
-    margin-bottom: 10px;
   }
   .block04 P {
     width: 600px;
@@ -98,89 +66,45 @@
     margin-right: -15px;
   }
   .block04 .integer li {
-    float: left;
     width: 270px;
     font-size: 18px;
-    text-align: center;
     margin: 0 15px 50px 15px;
   }
   .block04 .integer li .item-image {
     height: 200px;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 15px;
   }
   .block04 .integer li .item-image a {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
     padding: 15px;
-    cursor: pointer;
-    position: absolute;
   }
   .block04 .integer li .item-image a span {
-    height: 100%;
-    display: none;
     font-size: 26px;
     line-height: 26px;
     padding-top: 90px;
-    text-align: center;
-    background: url("../img/loop.png") center 40px no-repeat;
-  }
-  .block04 .integer li .item-image a:hover {
-    background: url("../img/pattern-gray.png");
-  }
-  .block04 .integer li .item-image a:hover span {
-    display: block;
   }
   .block05 {
     height: 600px;
     padding: 80px 0 70px 0;
-    background: url("../img/b05_bd.jpg") top center no-repeat;
   }
   .block05 h2 {
-    font-size: 45px;
-    line-height: 45px;
     margin-bottom: 95px;
-  }
-  .block05 h2 span {
-    font-size: 25px;
-    line-height: 40px;
   }
   .block05 ul {
     margin-bottom: 70px;
   }
   .block05 ul li {
-    width: 25%;
-    float: left;
     padding: 0 20px;
     font-size: 15px;
-    text-align: center;
-  }
-  .block05 ul li .item-image {
-    width: 65px;
-    margin: 0 auto 20px auto;
   }
   .block06 {
     padding: 60px 0;
   }
   .block06 h2 {
-    font-size: 45px;
-    line-height: 45px;
     margin-bottom: 75px;
-  }
-  .block06 h2 span {
-    font-size: 25px;
-    line-height: 40px;
   }
   .block06 ul {
     margin-bottom: 50px;
   }
   .block06 ul li {
-    width: 25%;
-    float: left;
     padding: 0 20px;
     font-size: 15px;
     text-align: center;
@@ -189,77 +113,29 @@
     width: 65px;
     margin: 0 auto 20px auto;
   }
-  .block07 {
-    padding: 35px 0;
-    background: url("../img/b07_bg.jpg");
-  }
-  .block07 h2 {
-    margin-bottom: 35px;
-  }
   .block07 .gallery-inner {
     position: relative;
     margin-bottom: 50px;
   }
-  .block07 .nav-prev {
-    width: 18px;
-    height: 14px;
-    display: block;
-    cursor: pointer;
-    margin: 0 auto 35px auto;
-    background: url("../img/gallery-nav.png") 0 0 no-repeat;
-  }
-  .block07 .nav-next {
-    width: 18px;
-    height: 14px;
-    margin: 10px auto 0 auto;
-    display: block;
-    cursor: pointer;
-    background: url("../img/gallery-nav.png") 0 -14px no-repeat;
-  }
-  .block07 .gallery {
-    overflow: hidden;
-    position: relative;
-  }
-  .block07 .gallery ul {
+  .block07 .gallery li {
     overflow: hidden;
     margin: 0 -15px 30px -15px;
   }
-  .block07 .gallery ul li {
-    float: left;
+  .block07 .gallery li .gallery-item {
     width: 270px;
     margin: 0 15px;
-    overflow: hidden;
-    position: relative;
   }
-  .block07 .gallery ul li a {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
+  .block07 .gallery li .gallery-item a {
     padding: 15px;
-    cursor: pointer;
-    position: absolute;
   }
-  .block07 .gallery ul li a span {
-    height: 100%;
-    display: none;
+  .block07 .gallery li .gallery-item a span {
     font-size: 26px;
     line-height: 26px;
     padding-top: 90px;
-    text-align: center;
-    background: url("../img/loop.png") center 40px no-repeat;
-  }
-  .block07 .gallery ul li a:hover {
-    background: url("../img/pattern-gray.png");
-  }
-  .block07 .gallery ul li a:hover span {
-    display: block;
   }
   .block08 {
     height: 730px;
     padding: 60px 0;
-    background: url("../img/b08_bg.jpg") top center no-repeat;
   }
   .block08 h2 {
     font-size: 45px;
@@ -268,26 +144,21 @@
   }
   .block08 .box {
     font-size: 20px;
-    font-weight: 700;
-    text-align: center;
     margin: 0 100px 80px 100px;
   }
   .block08 .box-left {
-    float: left;
     width: 470px;
     padding-top: 90px;
   }
   .block08 .box-left .text1 {
     font-size: 50px;
     line-height: 50px;
-    margin-bottom: 7px;
   }
   .block08 .box-left .text2 {
     font-size: 15px;
     line-height: 20px;
   }
   .block08 .box-right {
-    float: right;
     width: 570px;
     margin-right: 100px;
   }
@@ -295,7 +166,6 @@
     padding: 68px 0;
   }
   .block09 h2 {
-    font-size: 30px;
     margin-bottom: 65px;
   }
   .block09 .reply {
@@ -318,34 +188,15 @@
     float: right;
   }
   .block09 .reply .reply-gallery .item-image a {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
     padding: 15px;
-    cursor: pointer;
-    position: absolute;
   }
   .block09 .reply .reply-gallery .item-image a span {
-    height: 100%;
-    display: none;
     font-size: 26px;
     line-height: 26px;
     padding-top: 90px;
-    text-align: center;
-    background: url("../img/loop.png") center 40px no-repeat;
-  }
-  .block09 .reply .reply-gallery .item-image a:hover {
-    background: url("../img/pattern-gray.png");
-  }
-  .block09 .reply .reply-gallery .item-image a:hover span {
-    display: block;
   }
   .block09 .reply .reply-text {
-    float: right;
     width: 470px;
-    text-align: center;
   }
   .block09 .reply .reply-text .reply-author {
     font-size: 40px;
@@ -355,68 +206,58 @@
     font-weight: 700;
     line-height: 25px;
   }
-  .block09 .reply-nav {
-    top: 50%;
-    width: 14px;
-    height: 18px;
-    margin-top: -9px;
-    position: absolute;
-    cursor: pointer;
-  }
-  .block09 .reply-nav.prev {
-    left: 0;
-    background: url("../img/nav-arrow.png") 0 0 no-repeat;
-  }
-  .block09 .reply-nav.next {
-    right: 0;
-    background: url("../img/nav-arrow.png") -14px 0 no-repeat;
-  }
-  .block09 .reply-nav.prev:hover {
-    left: 0;
-    background: url("../img/nav-arrow.png") 0 -18px no-repeat;
-  }
-  .block09 .reply-nav.next:hover {
-    right: 0;
-    background: url("../img/nav-arrow.png") -14px -18px no-repeat;
-  }
-  .block10 {
-    padding-top: 35px;
-    background: url("../img/b10_bg.jpg") top center no-repeat;
-  }
-  .block10 h2 {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 40px;
+  .block09 .reply .reply-text p {
+    font-size: 13px;
   }
   .block10 h2 span {
-    font-size: 30px;
-    line-height: 40px;
+    margin-bottom: 40px;
     text-transform: uppercase;
   }
   .block10 .form-box {
     padding-top: 40px;
     padding-bottom: 20px;
   }
-  .block10 .form-center {
-    width: 570px;
-    margin: 0 auto 50px auto;
-  }
-  .block10 .form-center textarea,
-  .block10 .form-center input[type="text"] {
-    text-align: left;
-  }
   .footer {
     height: 220px;
-    background: url("../img/pattern-gray.png");
+    padding-top: 70px;
   }
   .footer .footer-left {
-    float: left;
     width: 270px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 130px;
+  }
+  .footer .footer-center {
+    color: #fff;
+    float: left;
+    width: 370px;
+    text-align: center;
+  }
+  .footer .footer-center li:last-child {
+    margin-top: 5px;
+  }
+  .footer .footer-right {
+    float: right;
+    width: 270px;
+    height: 100%;
+    font-size: 25px;
+    line-height: 30px;
+    position: relative;
+  }
+  .footer .footer-right .dev {
+    top: 50px;
+    left: 60px;
+    width: 133px;
+    height: 63px;
+    cursor: pointer;
+    position: absolute;
+    background: url("../img/dev-logo.png") 0 0 no-repeat;
+  }
+  .divider {
+    margin: 19px auto;
   }
   .form-box {
-    background: #fff;
     padding: 35px 110px 30px 110px;
-    border: 3px solid #eedec5;
   }
   .form-box .form-title {
     color: #000;
@@ -456,5 +297,10 @@
   }
   .cform li textarea {
     height: 190px;
+  }
+  .owl-dots {
+    bottom: 40px;
+    left: 130px;
+    width: 180px;
   }
 }

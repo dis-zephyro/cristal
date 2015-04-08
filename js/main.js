@@ -18,3 +18,36 @@ $(".popup").fancybox({
     }
 });
 
+var slider = $('.slider');
+slider.owlCarousel({
+    loop:true,
+    items: 1,
+    nav:true,
+    autoplay: true
+});
+
+var reply = $('.reply');
+reply.owlCarousel({
+    loop:true,
+    items: 1,
+    autoplay: true
+});
+
+$('.reply-nav.next').click(function() {
+    reply.trigger('next.owl.carousel');
+});
+
+$('.reply-nav.prev').click(function() {
+    reply.trigger('prev.owl.carousel');
+});
+
+
+
+$('.gallery').jCarouselLite({
+    btnNext: '.nav-next',
+    btnPrev: '.nav-prev',
+    vertical: true,
+    speed: 500,
+    visible: 3
+});
+
