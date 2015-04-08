@@ -8,14 +8,17 @@
         <meta name="viewport" content="width=1024">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="js/vendor/owl.carousel/assets/owl.carousel.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
-        <link rel="stylesheet/less" href="css/main.less">
-        <link rel="stylesheet/less" href="css/tablet.less">
-        <link rel="stylesheet/less" href="css/desktop.less">
-        <script src="js/vendor/less.min.js"></script>
+        <link rel="stylesheet" href="js/vendor/slick/slick.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/desktop.css">
+        <script src="js/vendor/respond.src.js"></script>
+        <!--link rel="stylesheet/less" href="css/main.less"-->
+        <!--link rel="stylesheet/less" href="css/tablet.less"-->
+        <!--link rel="stylesheet/less" href="css/desktop.less"-->
+        <!--script src="js/vendor/less.min.js"></script-->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     
@@ -30,10 +33,10 @@
                 <h1>Студия художественной мозаики<br/>в Москве и МО</h1>
                 <div class="line"></div>
                 <h2>Реализуем любые фанатзии в уникальный<br/>интерьер ручной работы</h2>
-                <div class="text-center"><a class="btn popup" href="#popup">узнать подробнее</a></div>
+                <div class="text-center"><a class="btn scroll" href="#block02">узнать подробнее</a></div>
             </div>
         </section>
-        <section class="block02">
+        <section class="block02" id="block02">
             <div class="container">
                 <ul class="clearfix">
                     <li class="item01">
@@ -71,12 +74,24 @@
         </section>
         <section class="block03">
             <div class="container">
-                <ul class="slider owl-carousel">
+                <ul class="slider">
                     <li class="clearfix">
                         <div class="slide-text">
                             <div class="slide-name">Ручная работа</div>
                             <div class="slide-title">Каждое издели выполняется<br/>художником вручную</div>
-                            <div class="divider"></div>
+                            <div class="divider hidden-s"></div>
+                            <p>Вы получаете уникальное произведение искусства,<br/>которе украсит интерьер
+                                <br/>и подчеркнет статус его владельца</p>
+                        </div>
+                        <div class="slide-image">
+                            <img class="img-responsive" src="images/b03_slide01.jpg">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="slide-text">
+                            <div class="slide-name">Ручная работа</div>
+                            <div class="slide-title">Каждое издели выполняется<br/>художником вручную</div>
+                            <div class="divider hidden-s"></div>
                             <p>Вы получаете уникальное произведение искусства,<br/>которе украсит интерьер
                                 <br/>и подчеркнет статус его владельца</p>
                         </div>
@@ -256,64 +271,80 @@
                 <h2>Примеры наших работ</h2>
                 <div class="gallery-inner">
                     <span class="nav-prev"></span>
-                    <div class="gallery">
-                        <ul>
-                            <li class="clearfix">
-                                <div class="gallery-item">
+                        <div class="gallery">
+                            <ul class="clearfix">
+                                <li class="item01">
                                     <img  class="img-responsive" src="images/gallery01.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery01.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                                <div class="gallery-item hidden-s">
+                                </li>
+                                <li class="item02 hidden-s">
                                     <img  class="img-responsive" src="images/gallery02.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery02.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                                <div class="gallery-item hidden-s">
+                                </li>
+                                <li class="item03 hidden-s">
                                     <img  class="img-responsive" src="images/gallery03.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery03.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                                <div class="gallery-item hidden-s">
+                                </li>
+                                <li class="item04 hidden-s">
                                     <img  class="img-responsive" src="images/gallery04.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery04.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <div class="gallery-item">
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li class="item01">
                                     <img  class="img-responsive" src="images/gallery05.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery05.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                                <div class="gallery-item hidden-s">
+                                </li>
+                                <li class="item02 hidden-s">
                                     <img  class="img-responsive" src="images/gallery06.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery06.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                                <div class="gallery-item hidden-s">
+                                </li>
+                                <li class="item03 hidden-s">
                                     <img  class="img-responsive" src="images/gallery07.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery07.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                                <div class="gallery-item hidden-s">
+                                </li>
+                                <li class="item04 hidden-s">
                                     <img  class="img-responsive" src="images/gallery08.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery08.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <div class="gallery-item">
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li class="item01">
                                     <img  class="img-responsive" src="images/gallery01.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery01.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                                <div class="gallery-item hidden-s">
+                                </li>
+                                <li class="item02 hidden-s">
                                     <img  class="img-responsive" src="images/gallery10.jpg"м>
                                     <a href="images/gallery10.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                                <div class="gallery-item hidden-s">
+                                </li>
+                                <li class="item03 hidden-s">
                                     <img  class="img-responsive" src="images/gallery02.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery02.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                                <div class="gallery-item hidden-s">
+                                </li>
+                                <li class="item04 hidden-s">
                                     <img  class="img-responsive" src="images/gallery02.jpg" alt="Кухонная стенка">
                                     <a href="images/gallery02.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li class="item01">
+                                    <img  class="img-responsive" src="images/gallery05.jpg" alt="Кухонная стенка">
+                                    <a href="images/gallery05.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
+                                </li>
+                                <li class="item02 hidden-s">
+                                    <img  class="img-responsive" src="images/gallery06.jpg" alt="Кухонная стенка">
+                                    <a href="images/gallery06.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
+                                </li>
+                                <li class="item03 hidden-s">
+                                    <img  class="img-responsive" src="images/gallery07.jpg" alt="Кухонная стенка">
+                                    <a href="images/gallery07.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
+                                </li>
+                                <li class="item04 hidden-s">
+                                    <img  class="img-responsive" src="images/gallery08.jpg" alt="Кухонная стенка">
+                                    <a href="images/gallery08.jpg" class="gallery-link" rel="gallery2"><span>Кухонная стенка</span></a>
+                                </li>
+                            </ul>
+                        </div>
                     <span class="nav-next"></span>
                 </div>
                 <div class="text-center"><a class="btn popup" href="#popup">узнать подробнее</a></div>
@@ -363,17 +394,8 @@
             <div class="container">
                 <h2>Наши клиенты о нас</h2>
                 <div class="reply-inner">
-                    <ul class="reply owl-carousel">
+                    <ul class="reply">
                         <li>
-                            <div class="reply-text">
-                                <div class="reply-author">Сергей Ильин</div>
-                                <div class="reply-city">г. Москва</div>
-                                <div class="divider"></div>
-                                <p>Для демонстрации заявленных возможностей написано простое приложение которое позволяет делать SQL запросы на сервер и получать результаты их выполнения, его код рассмотрим здесь. Время освоения — 10 минут.</p>
-                                <p>Приложение многопользовательское, каждый пользователь имеет свою БД, которая недоступна другим пользователям. Код открытый, лицензия Apache 2.0.</p>
-                                <br/>
-                                <div class="text-center hidden-s"><a class="btn btn-yellow popup" href="#popup">хочу так же</a></div>
-                            </div>
                             <div class="reply-gallery">
                                 <div class="item-image image-large hidden-s">
                                     <img class="img-responsive" src="images/clients01_1.jpg" alt="Кухонная стенка">
@@ -389,18 +411,18 @@
                                         <a href="images/clients01_3.jpg" class="gallery-link" rel="gallery3"><span><i class="hidden-s">Кухонная стенка</i></span></a>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="reply-text">
+                                <div class="reply-author">Сергей Ильин</div>
+                                <div class="reply-city">г. Москва</div>
+                                <div class="divider"></div>
+                                <p>Для демонстрации заявленных возможностей написано простое приложение которое позволяет делать SQL запросы на сервер и получать результаты их выполнения, его код рассмотрим здесь. Время освоения — 10 минут.</p>
+                                <p>Приложение многопользовательское, каждый пользователь имеет свою БД, которая недоступна другим пользователям. Код открытый, лицензия Apache 2.0.</p>
+                                <br/>
+                                <div class="text-center hidden-s"><a class="btn btn-yellow popup" href="#popup">хочу так же</a></div>
                             </div>
                         </li>
                         <li>
-                            <div class="reply-text">
-                                <div class="reply-author">Сергей Ильин</div>
-                                <div class="reply-city">г. Москва</div>
-                                <div class="divider"></div>
-                                <p>Для демонстрации заявленных возможностей написано простое приложение которое позволяет делать SQL запросы на сервер и получать результаты их выполнения, его код рассмотрим здесь. Время освоения — 10 минут.</p>
-                                <p>Приложение многопользовательское, каждый пользователь имеет свою БД, которая недоступна другим пользователям. Код открытый, лицензия Apache 2.0.</p>
-                                <br/>
-                                <div class="text-center hidden-s"><a class="btn btn-yellow popup" href="#popup">хочу так же</a></div>
-                            </div>
                             <div class="reply-gallery">
                                 <div class="item-image image-large hidden-s">
                                     <img class="img-responsive" src="images/clients01_1.jpg" alt="Кухонная стенка">
@@ -416,6 +438,15 @@
                                         <a href="images/clients01_3.jpg" class="gallery-link" rel="gallery3"><span><i class="hidden-s">Кухонная стенка</i></span></a>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="reply-text">
+                                <div class="reply-author">Сергей Ильин</div>
+                                <div class="reply-city">г. Москва</div>
+                                <div class="divider"></div>
+                                <p>Для демонстрации заявленных возможностей написано простое приложение которое позволяет делать SQL запросы на сервер и получать результаты их выполнения, его код рассмотрим здесь. Время освоения — 10 минут.</p>
+                                <p>Приложение многопользовательское, каждый пользователь имеет свою БД, которая недоступна другим пользователям. Код открытый, лицензия Apache 2.0.</p>
+                                <br/>
+                                <div class="text-center hidden-s"><a class="btn btn-yellow popup" href="#popup">хочу так же</a></div>
                             </div>
                         </li>
                     </ul>
@@ -501,9 +532,11 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <!--script src="js/vendor/owl.carousel/owl.carousel.min.js"></script-->
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
-        <script src="js/vendor/jcarousellite_1.0.1.min.js"></script>
+        <script src="js/vendor/slick/slick.min.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
+        <!--script src="js/vendor/jcarousellite_1.0.1.min.js"></script-->
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

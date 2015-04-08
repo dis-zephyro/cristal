@@ -1,4 +1,4 @@
-@media (min-width: 720px) {
+@media screen and (min-width: 720px) {
   .container {
     width: 720px;
   }
@@ -61,6 +61,7 @@
     width: 340px;
     font-size: 13px;
     margin-bottom: 0;
+    margin-right: 20px;
   }
   .block03 .slider .slide-text .slide-name {
     font-size: 50px;
@@ -72,7 +73,7 @@
     line-height: 25px;
   }
   .block03 .slider .slide-image {
-    float: right;
+    float: left;
     width: 340px;
     margin-bottom: 0;
   }
@@ -168,18 +169,18 @@
     overflow: hidden;
     position: relative;
   }
-  .block07 .gallery li {
-    margin: 0 -10px 20px -10px;
+  .block07 .gallery ul {
+    margin: 0 -10px;
   }
-  .block07 .gallery li .gallery-item {
+  .block07 .gallery ul li {
     float: left;
-    width: 160px;
+    width: 159px;
     margin: 0 10px;
   }
-  .block07 .gallery li .gallery-item a {
+  .block07 .gallery ul li a {
     padding: 8px;
   }
-  .block07 .gallery li .gallery-item a span {
+  .block07 .gallery ul li a span {
     font-size: 18px;
     line-height: 18px;
     padding-top: 60px;
@@ -233,6 +234,7 @@
     float: left;
     width: 340px;
     overflow: hidden;
+    margin-right: 20px;
   }
   .block09 .reply .reply-gallery .image-large {
     margin-bottom: 20px;
@@ -248,7 +250,7 @@
     padding-top: 60px;
   }
   .block09 .reply .reply-text {
-    float: right;
+    float: left;
     width: 240px;
   }
   .block09 .reply-nav {
@@ -352,29 +354,15 @@
   .cform li textarea {
     height: 190px;
   }
-  .owl-dots {
-    bottom: 20px;
-    left: 80px;
-    width: 180px;
-    height: 10px;
+  .slick-dots {
     display: block;
-    overflow: hidden;
-    text-align: center;
-    position: absolute;
+    bottom: 20px;
+    left: 85px;
+    width: 180px;
+    height: 20px;
   }
-  .owl-dots .owl-dot {
-    width: 10px;
-    height: 10px;
-    margin-right: 8px;
-    display: inline-block;
-    background: url("../img/pagination.png") 0 0 no-repeat;
-  }
-  .owl-dots .owl-dot span {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-  }
-  .owl-dots .owl-dot.active {
-    background: url("../img/pagination.png") -20px 0 no-repeat;
+  .btn-close {
+    top: -35px;
+    right: -40px;
   }
 }

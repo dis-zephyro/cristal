@@ -1,3 +1,53 @@
+$(document).ready(function(){
+
+
+
+
+
+    $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false
+    });
+
+    $('.gallery').slick({
+        infinite: true,
+        vertical: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow : 3
+
+    });
+
+    $(".nav-prev").click(function () {
+        $('.gallery').slick('slickPrev');
+    });
+    $(".nav-next").click(function () {
+        $('.gallery').slick('slickNext');
+    });
+
+
+    $('.reply').slick({
+        infinite: true,
+        arrows: false,
+        slidesToShow : 1
+    });
+
+    $(".reply-nav.prev").click(function () {
+        $('.reply').slick('slickPrev');
+    });
+    $(".reply-nav.next").click(function () {
+        $('.reply').slick('slickNext');
+    });
+
+});
+
+
+
 $(".image-link, .gallery-link").fancybox({
     'autoWidth' : true,
     'autoHeight' : true,
@@ -18,6 +68,11 @@ $(".popup").fancybox({
     }
 });
 
+
+
+
+
+/*
 var slider = $('.slider');
 slider.owlCarousel({
     loop:true,
@@ -42,7 +97,6 @@ $('.reply-nav.prev').click(function() {
 });
 
 
-
 $('.gallery').jCarouselLite({
     btnNext: '.nav-next',
     btnPrev: '.nav-prev',
@@ -51,3 +105,4 @@ $('.gallery').jCarouselLite({
     visible: 3
 });
 
+*/

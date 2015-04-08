@@ -41,6 +41,7 @@
     width: 430px;
     height: 340px;
     padding-top: 45px;
+    margin-right: 100px;
   }
   .block03 .slider .slide-text .slide-title {
     font-size: 25px;
@@ -117,18 +118,19 @@
     position: relative;
     margin-bottom: 50px;
   }
-  .block07 .gallery li {
+  .block07 .gallery ul {
     overflow: hidden;
-    margin: 0 -15px 30px -15px;
+    margin: 0 -15px;
+    padding: 15px 0;
   }
-  .block07 .gallery li .gallery-item {
-    width: 270px;
-    margin: 0 15px;
+  .block07 .gallery ul li {
+    width: 269px;
+    margin: 0 15px 0 15px;
   }
-  .block07 .gallery li .gallery-item a {
+  .block07 .gallery ul li a {
     padding: 15px;
   }
-  .block07 .gallery li .gallery-item a span {
+  .block07 .gallery ul li a span {
     font-size: 26px;
     line-height: 26px;
     padding-top: 90px;
@@ -172,10 +174,10 @@
     width: 970px;
   }
   .block09 .reply .reply-gallery {
-    float: left;
     width: 370px;
     height: 365px;
     overflow: hidden;
+    margin-right: 100px;
   }
   .block09 .reply .reply-gallery .image-large {
     margin-bottom: 20px;
@@ -298,9 +300,8 @@
   .cform li textarea {
     height: 190px;
   }
-  .owl-dots {
-    bottom: 40px;
+  .slick-dots {
+    bottom: 30px;
     left: 130px;
-    width: 180px;
   }
 }
